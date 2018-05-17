@@ -32,7 +32,7 @@ var twenty_fifty = new L.GeoJSON.AJAX("data/fifty3.geojson", {
 					renderer: 'L.CANVAS'
 					});
 
-var layerGroup = new L.LayerGroup();
+// var layerGroup = new L.LayerGroup();
 
 
 
@@ -62,8 +62,14 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 $( function() {
 	 $( "#accordion" ).accordion();
-	 animate:100;
+	 animate:500;
+	
  } );
+$( function() {
+	 $( "#sidebar" ).draggable().resizable();
+
+ } );
+
 
 //  $( ".selector" ).accordion({
 //    activate: function( event, ui ) {}
@@ -89,13 +95,11 @@ $("#accordion h3:eq(1)").on("click", function(){
 	// $("#sidebar-wrapper").css("border-color", "orange")
 })
 $("#accordion h3:eq(2)").on("click", function(){
-	layerGroup.clearLayers(),
 	twenty_twenty.addTo(map);
 	// $("#sidebar-wrapper").css("border-color", "blue")
 
 })
 $("#accordion h3:eq(3)").on("click", function(){
-	layerGroup.clearLayers(),
 	twenty_fifty.addTo(map);
 })
 // $("#accordion").click("#ui-id-7", (function(){

@@ -9,10 +9,11 @@ html, body, #container {
 body {
   /* height of .navbar, customize with @navbar-height variable */
 	padding-top: 50px;
-	font-family: 'DatalegreyaGradient';
+	font-family: 'Lato';
+  color: black;
 
 	font-weight: normal;
-	font-style: normal;
+
 
 }
 .navbar  {
@@ -32,8 +33,10 @@ body {
 #sidebar {
   float: left;
   max-height: 100%;
+
   max-width: 100%;
   width: 35%;
+  min-width: 10%;
   position: absolute;
   clear: top;
   top: 10px;
