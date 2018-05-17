@@ -1,0 +1,126 @@
+html, body, #container {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+
+
+}
+body {
+  /* height of .navbar, customize with @navbar-height variable */
+	padding-top: 50px;
+	font-family: 'DatalegreyaGradient';
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+.navbar  {
+	min-height: 50px;
+	padding-left: 29px;
+	position:absolute;
+}
+
+#header-map{
+	float:left;
+	position:absolute;
+	max-height: 100%;
+}
+
+
+
+#sidebar {
+  float: left;
+  max-height: 100%;
+  max-width: 100%;
+  width: 35%;
+  position: absolute;
+  clear: top;
+  top: 10px;
+  left: 40px; z-index: 99;
+
+
+}
+#container #sidebar {
+	opacity:0.95;
+	max-height: 90%
+}
+#sidebar #sidebar-header {
+	height: 100px;
+	background-color:black;
+	position:relative;
+	opacity:0.9;
+
+
+
+}
+#sidebar #sidebar-header p {
+	font-family: 'DatalegreyaGradient';
+   font-weight: normal;
+   font-style: normal;
+
+   color:white;
+
+   text-align:center;
+
+   padding-top:21px;
+   font-size: 2.5em;
+   position:relative;
+}
+
+#sidebar-wrapper  {
+  height: 98%;
+  position: relative;
+  width: 100%;
+  background-color:white;
+  /*background-image:
+    linear-gradient(
+	to right,
+      black, gray
+    );
+	box-shadow: 0 20px 0 0 black; */
+	 border-color:black;
+   border-radius: 1px;
+   border-style: solid;
+
+}
+#main-content{
+		padding-top:400px;
+}
+
+ #accordion  {
+  font-size:1em;
+	position:relative;
+	font-family: 'Lato';
+	/* font-style:bold; */
+  font-weight:4400;
+}
+
+
+
+
+
+
+
+li {
+
+}
+
+@media (max-width: 700px) {
+#sidebar {
+  display: none;
+}
+}
+
+a {
+	cursor: pointer;
+}
+
+#options {
+	top-margin:100%
+}
+#map {
+
+  height: 100%;
+  width: auto;
+}

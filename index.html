@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- settings for scaling on different browser resolutions and different devices -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet.label.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+   	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+	   <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+	   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/datalegreya" type="text/css"/>
+     <script src='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+	<title>New York City Flood Map</title>
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-collapse collapse">					<!-- remember to make sure everything responsive- no navbar on mobile, etc -->
+		  <img src="img/header-map.png" id="header-map">		<!-- make this icon a link that resets the page -->
+
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="sidebar">
+
+        <div id="sidebar-wrapper">
+		 <div id="sidebar-header"><p>n|1e|0w|3 y|1o|2r|1k|3 c|1i|2t|1y f|2l|3o|1o|2d|1 m|0a|2p|2</p></div>
+
+
+<div id="accordion">
+  <h3>Introduction</h3>
+  <div>
+    <p>
+<p>In New York, the full brunt of Hurricane Sandy has shown how powerful and damaging the effects of coastal flooding can be for infrastructure and communities. </p>
+  <p style="color:red;">  Click on the proceeding sections for flood plain visualizations </p>
+
+    </p>
+  </div>
+  <h3>Flooded Areas During Hurricane Sandy: 2012</h3>
+  <div>
+    <p>
+    <p>New York was severely affected by Hurricane Sandy in 2012, particularly New York City, its suburbs, and Long Island. Sandy's impacts included the flooding of the New York City Subway system, of many suburban communities, and of all road tunnels entering Manhattan except the Lincoln Tunnel. <p>
+    </p>
+  </div>
+  <h3>Projected Flood Plain Expansion Due Rising Sea Levels: 2020</h3>
+  <div>
+    <p>
+    A 2013 study by New York City Panel on Climate Change warns we can expect a larger flood plain as soon as 2020.
+    </p>
+
+  </div>
+  <h3>Sea Level Rise Due to Climate Change: 2050</h3>
+  <div>
+    <p>
+    100-Year Floodplains based on FEMA's Preliminary Work Map data and the New York Panel on Climate Change's 90th Percentile Projects for Sea-Level Rise (31 inches).  Data Provided by the Mayor's Office of Long-Term Planning and Sustainability (OLTPS).
+    </p>
+    <h3 style="color:red;">Further Reading</h3>
+    <ul>
+      <li><a href="https://opendata.cityofnewyork.us/" target="_blank"> NYC Open Data</a></li>
+      <li><a href="https://data.cityofnewyork.us/api/assets/1F7A128D-4F0D-430C-A98E-53E44CFFCAD7?download=true" target="_blank">New York City Panel on Climate Change: Climate Risk Information 2013</a>(pdf)
+      <li><a href="https://data.cityofnewyork.us/Environment/Sea-Level-Rise-Maps-2020s-100-year-Floodplain-/ezfn-5dsb/about" target="_blank"> 100 Year Floodplain New York 2020</a></li>
+      <li><a href="https://data.cityofnewyork.us/Environment/Sea-Level-Rise-Maps-2050s-100-year-Floodplain-/hbw8-2bah/about" target="_blank"> 100 Year Floodplain New York 2050</a></li>
+    </ul>
+    <div>
+
+  </div>
+</div>
+
+
+      </div>
+		</div>
+		</div>
+	<div id="map"></div>
+    </div>
+
+ <script src="js/jquery-3.1.1.min.js"></script>
+
+
+
+ <!-- <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script> -->
+ <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet-src.js"></script> -->
+  <!-- <script src="js/leaflet.label.js"></script> -->
+ <link rel="stylesheet" href="leaflet/leaflet.css" />
+ <script src="leaflet/leaflet.js"></script>
+ <script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script>
+ <script src="js/leaflet.ajax.min.js" type="text/javascript"></script>
+ <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+ <script
+   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+   crossorigin="anonymous"></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+ <script src="js/main.js"></script>
+  </body>
+</html>
